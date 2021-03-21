@@ -1,6 +1,6 @@
 import axios from 'axios';
 
-const url = 'http://localhost:10255/posts';
+const url = 'https://fun.mongo.cosmos.azure.com:443/posts';
 
 export const fetchPosts = () => axios.get(url);
 export const createPost = (newPost) => axios.post(url, newPost);
