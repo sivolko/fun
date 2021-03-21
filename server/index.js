@@ -15,6 +15,12 @@ app.use(cors());
 
 app.use('/posts', postRoutes);
 
+app.get('/', (req,res) => {
+    res.send('Hello');
+});
+
+
+
 // const CONNECTION_URL = 'mongodb+srv://crud:mongo07@cluster0.jxt9i.mongodb.net/MERN';
 const PORT = process.env.PORT|| 10255;
 
